@@ -19,4 +19,12 @@ I am using this repository to learn about computational methods of protein struc
     - Train the model 
     - Evaluate accuracy per residue.
 
+### 2. Sequence Classification using Pre-trained PLM
+**Objective:** Predict the location of the protein (membrane, nuclei.etc) using the given sequence of the protein using the embeddings obtained from a large Protein-language model (PLM).
 
+**Concepts practiced:** Sequence encoding, Embeddings
+
+**Steps:**
+1. For each input sequence pass it through a pre-trained PLM to compute the embeddings.
+2. Use the embeddings as the input features and the location as the target variable.
+3. Use a ML model like RandomForest to fit the embeddings and target to get the classification. 
